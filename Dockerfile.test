@@ -3,7 +3,7 @@ MAINTAINER Viktor Farcic "viktor@farcic.com"
 
 ENV VERSION 1.0
 
-RUN apt-get update
+RUN apt-get clean && apt-get update
 
 # CUrl
 RUN apt-get -y install curl
